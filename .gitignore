@@ -3,3 +3,6 @@ elpa/*
 .smex-items
 auto-save-list/*
 places
+eshell/*
+session*
+ac-comphist.dat
