@@ -37,8 +37,15 @@
 (define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
 (define-key c-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
 (require 'flymake)
-;;; Keybinding
 
+;;; Keybinding
 (global-set-key (kbd "C-M-t") 'eshell)	; eshell
+
+;;; Full screen when startup
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+;;; Split window when startup
+(split-window-right)
 
 
