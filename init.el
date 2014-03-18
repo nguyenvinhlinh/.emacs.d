@@ -40,12 +40,28 @@
 
 ;;; Keybinding
 (global-set-key (kbd "C-M-t") 'eshell)	; eshell
-
+(global-set-key (kbd "C-k") 'kill-this-buffer);
 ;;; Full screen when startup
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.40")
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;;; Split window when startup
 (split-window-right)
+
+(setq ido-decorations
+'("\n=> " "" "\n" "" "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]"))
+
+;;; auto complete header for C, C++
+(require 'auto-complete-c-headers)
+(add-to-list 'ac-sources 'ac-source-c-headers)
+
+;;; modify the interface of dired output
+(require 'dired-details+)
+(setq dired-details-hide-link-targets nil)
 
 
