@@ -1,15 +1,18 @@
 (require 'package)
 (dolist (source '(("marmalade" . "http://marmalade-repo.org/packages/")
                   ("elpa" . "http://tromey.com/elpa/")
-                  ;; TODO: Maybe, use this after emacs24 is released
-                  ;; (development versions of packages)
                   ("melpa" . "http://melpa.milkbox.net/packages/")
                   ))
   (add-to-list 'package-archives source t))
 (package-initialize)
 
-(require 'color-theme)
-(color-theme-solarized-dark)
+;;;(require 'color-theme)
+;;;(color-theme-solarized-dark)
+(load-theme 'monokai t)
+(require 'nyan-mode)
+(setq-default nyan-wavy-trail t)
+(nyan-mode)
+(nyan-start-animation)
 (require 'cc-mode)
 (setq-default c-basic-offset 4 c-default-style "linux")
 (setq-default tab-width 4 indent-tabs-mode t)
@@ -87,4 +90,3 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
-
