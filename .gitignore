@@ -6,3 +6,9 @@ places
 eshell/*
 session*
 ac-comphist.dat
+init.el.before_ecb_2.40
+projectile-bookmarks.eld
+projectile.cache
+rake.cache
+tramp
+url/cookies
