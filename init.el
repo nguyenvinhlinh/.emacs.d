@@ -6,13 +6,14 @@
   (add-to-list 'package-archives source t))
 (package-initialize)
 
-;;;(require 'color-theme)
-;;;(color-theme-solarized-dark)
+(add-to-list 'load-path "~/.emacs.d/libs")
 (load-theme 'monokai t)
 (require 'nyan-mode)
 (setq-default nyan-wavy-trail t)
+(setq-default nyan-bar-length 25)
 (nyan-mode)
 (nyan-start-animation)
+(display-time-mode 1)
 (require 'cc-mode)
 (setq-default c-basic-offset 4 c-default-style "linux")
 (setq-default tab-width 4 indent-tabs-mode t)
@@ -57,7 +58,7 @@
 ;;; set the number of collumns to go to next line
 (setq-default fill-column 80)
 ;;; moz
-(add-to-list 'load-path "~/.emacs.d")
+;;;(add-to-list 'load-path "~/.emacs.d/")
 (autoload 'moz-minor-mode "moz" "Mozilla Minor and Inferior Mozilla Modes" t)
 (add-hook 'javascript-mode-hook 'javascript-custom-setup)
 (defun javascript-custom-setup ()
@@ -90,3 +91,20 @@
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
+;;; indentation
+(require 'highlight-indentation)
+(add-hook 'ruby-mode-hook 'highlight-indentation-mode)
+;;; flymake-ruby, syntax checking
+(require 'flymake-ruby)
+(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+;;; flymake-cursor
+(require 'flymake-cursor)
+;;; smartparens
+;(smartparens-global-mode t)
+;(show-smartparens-global-mode t)
+
+;;; smartparens
+;(sp-local-pair 'markdown-mode "<%" "%>")
+;(sp-local-pair 'markdown-mode "<" ">")
+;;; Auto guesss taregt 
+(setq dired-dwim-target t)
