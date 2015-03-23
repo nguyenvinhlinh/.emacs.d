@@ -7,6 +7,8 @@
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/libs")
+(add-to-list 'load-path "~/.emacs.d/config")
+
 (load-theme 'monokai t)
 (require 'nyan-mode)
 (setq-default nyan-wavy-trail t)
@@ -106,5 +108,5 @@
 ;;; smartparens
 ;(sp-local-pair 'markdown-mode "<%" "%>")
 ;(sp-local-pair 'markdown-mode "<" ">")
-;;; Auto guesss taregt 
-(setq dired-dwim-target t)
+;;; Auto guesss taregt
+(require 'linh-dired)
