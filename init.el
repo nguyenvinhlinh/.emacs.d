@@ -110,3 +110,5 @@
 ;(sp-local-pair 'markdown-mode "<" ">")
 ;;; Auto guesss taregt
 (require 'linh-dired)
+(require 'linh-web-mode )
+
