@@ -11,15 +11,9 @@
 
 (load-theme 'monokai t)
 (require 'nyan-mode)
-(setq-default nyan-wavy-trail t)
-(setq-default nyan-bar-length 25)
-(nyan-mode)
-(nyan-start-animation)
 (display-time-mode 1)
 (require 'cc-mode)
-(setq-default c-basic-offset 4 c-default-style "linux")
-(setq-default tab-width 4 indent-tabs-mode t)
-(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+(setq-default tab-width 2)
 (require 'autopair)
 (autopair-global-mode 1)
 (setq autopair-autowrap t)
@@ -67,7 +61,7 @@
   (moz-minor-mode 1))
 (require 'sudo-save)
 ;;; password vault
-(password-vault-register-secrets-file "passwords")
+;;;(password-vault-register-secrets-file "passwords")
 ;;;Hooking up with Projectile - Rails Projectile
 (projectile-global-mode)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
@@ -112,4 +106,6 @@
 (require 'linh-dired)
 (require 'linh-web-mode)
 (require 'linh-simple-secret)
-
+(require 'linh-js3-mode)
+(require 'linh-c-mode)
+(require 'linh-nyan-cat-mode)

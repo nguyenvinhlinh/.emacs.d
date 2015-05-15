@@ -1,0 +1,5 @@
+(setq-default c-basic-offset tab-width)
+(setq-default c-default-style "linux")
+(setq-default indent-tabs-mode nil)
+(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+(provide 'linh-c-mode)

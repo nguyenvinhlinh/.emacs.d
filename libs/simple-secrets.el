@@ -198,7 +198,7 @@ after adding it to the secret file."
 
 (defun secret-generate-password ()
   (interactive)
-  (substring (shell-command-to-string secret-generate-password-command) 0 -1))
+   (substring (shell-command-to-string secret-generate-password-command) 0 -1))
 
 (provide 'simple-secrets)
 
