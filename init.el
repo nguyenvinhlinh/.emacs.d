@@ -60,9 +60,7 @@
 (defun javascript-custom-setup ()
   (moz-minor-mode 1))
 (require 'sudo-save)
-;;; password vault
-;;;(password-vault-register-secrets-file "passwords")
-;;;Hooking up with Projectile - Rails Projectile
+;;;Hooking up with Projectile
 (projectile-global-mode)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 ;;;Delete selection mode turn on globally
@@ -75,26 +73,6 @@
    (getenv "PATH")
   )
 )
-;;;auto-jump for eshell
-(add-to-list 'load-path "~/.emacs.d/eshell")
-(load-file "~/.emacs.d/eshell/shell-autojump.el")
-(eval-after-load 'eshell
-  '(require 'eshell-autojump nil t))
-(setq eshell-last-dir-ring 500)
-;;; robe mode for ruby
-(require 'robe)
-(add-hook 'ruby-mode-hook 'robe-mode)
-(add-hook 'robe-mode-hook 'ac-robe-setup)
-(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
-  (rvm-activate-corresponding-ruby))
-;;; indentation
-(require 'highlight-indentation)
-(add-hook 'ruby-mode-hook 'highlight-indentation-mode)
-;;; flymake-ruby, syntax checking
-(require 'flymake-ruby)
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
-;;; flymake-cursor
-(require 'flymake-cursor)
 ;;; smartparens
 ;(smartparens-global-mode t)
 ;(show-smartparens-global-mode t)
@@ -109,3 +87,5 @@
 (require 'linh-js3-mode)
 (require 'linh-c-mode)
 (require 'linh-nyan-cat-mode)
+(require 'linh-eshell-mode)
+(require 'linh-ror-mode)
