@@ -6,8 +6,8 @@
 ;;; indentation
 (require 'highlight-indentation)
 (add-hook 'ruby-mode-hook 'highlight-indentation-mode)
-(set-face-background 'highlight-indentation-face "#e3580c")
-(set-face-background 'highlight-indentation-current-column-face "#ff0000")
+(set-face-background 'highlight-indentation-face "#808080")
+(set-face-background 'highlight-indentation-current-column-face "#e5e5e5")
 ;;; flymake-ruby, syntax checking
 (require 'flymake-ruby)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
