@@ -3,4 +3,14 @@
 (eval-after-load 'eshell
   '(require 'eshell-autojump nil t))
 (setq eshell-last-dir-ring 500)
+(global-set-key (kbd "C-M-t") 'eshell)
+;;; add more path to eshell
+(setenv "PATH"
+  (concat
+   "/home/nguyenvinhlinh/.rvm/bin" ":"
+   "/home/nguyenvinhlinh/.rvm/gems/ruby-2.0.0-p353/wrappers" ":"
+   (getenv "PATH")
+  )
+)
+
 (provide 'linh-eshell-mode)

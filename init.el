@@ -30,9 +30,6 @@
 (define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
 (define-key c-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
 (require 'flymake)
-;;; Keybinding
-(global-set-key (kbd "C-M-t") 'eshell)	; eshell
-;(global-set-key (kbd "C-k") 'kill-this-buffer);
 ;;; Full screen when startup
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -65,14 +62,7 @@
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 ;;;Delete selection mode turn on globally
 (delete-selection-mode)
-;;; add more path to eshell
-(setenv "PATH"
-  (concat
-   "/home/nguyenvinhlinh/.rvm/bin" ":"
-   "/home/nguyenvinhlinh/.rvm/gems/ruby-2.0.0-p353/wrappers" ":"
-   (getenv "PATH")
-  )
-)
+
 ;;; smartparens
 ;(smartparens-global-mode t)
 ;(show-smartparens-global-mode t)
