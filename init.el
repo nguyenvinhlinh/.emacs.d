@@ -11,7 +11,6 @@
 
 (load-theme 'monokai t)
 (require 'nyan-mode)
-(display-time-mode 1)
 (require 'cc-mode)
 (setq-default tab-width 2)
 (require 'autopair)
@@ -39,7 +38,6 @@
  '(ecb-options-version "2.40")
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 ;;; Split window when startup
-(split-window-right)
 (setq ido-decorations
 '("\n=> " "" "\n" "" "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]"))
 ;;; auto complete header for C, C++
@@ -79,3 +77,4 @@
 (require 'linh-nyan-cat-mode)
 (require 'linh-eshell-mode)
 (require 'linh-ror-mode)
+(require 'linh-buffer)
