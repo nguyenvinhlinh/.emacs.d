@@ -78,3 +78,4 @@
 (require 'linh-eshell-mode)
 (require 'linh-ror-mode)
 (require 'linh-buffer)
+(require 'linh-keymap)
