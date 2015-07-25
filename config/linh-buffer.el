@@ -1,4 +1,3 @@
-(split-window-right)
 (global-unset-key (kbd "C-x o"))
 (global-set-key (kbd "C-x s") 'other-window)
 (display-time-mode 1)
