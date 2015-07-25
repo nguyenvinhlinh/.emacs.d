@@ -16,8 +16,6 @@
 (require 'autopair)
 (autopair-global-mode 1)
 (setq autopair-autowrap t)
-(add-to-list 'load-path "~/.emacs.d/packages/ecb")
-(load-file "~/.emacs.d/packages/ecb/ecb.el")
 (require 'yasnippet)
 (yas-global-mode 1)
 (require 'auto-complete-config)
