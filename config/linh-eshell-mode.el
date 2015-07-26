@@ -2,7 +2,6 @@
 (load-file "~/.emacs.d/eshell/shell-autojump.el")
 (eval-after-load 'eshell
   '(require 'eshell-autojump nil t))
-(setq eshell-last-dir-ring 500)
 (global-set-key (kbd "M-<menu>") 'eshell)
 ;;; add more path to eshell
 (setenv "PATH"
