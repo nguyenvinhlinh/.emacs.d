@@ -1,0 +1,8 @@
+#name: if elsif end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+if $1
+$2
+elsif
+$0
+end

@@ -1,0 +1,6 @@
+#name: if
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+if $1
+$0
+end
