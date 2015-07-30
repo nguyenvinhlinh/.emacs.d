@@ -77,3 +77,4 @@
 (require 'linh-ror-mode)
 (require 'linh-buffer)
 (require 'linh-keymap)
+(require 'linh-org-mode)
