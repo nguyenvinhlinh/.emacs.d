@@ -8,6 +8,7 @@
   (concat
    "/home/nguyenvinhlinh/.rvm/bin" ":"
    "/home/nguyenvinhlinh/.rvm/gems/ruby-2.0.0-p353/wrappers" ":"
+   "/opt/oracle/instantclient_12_1" ":"
    (getenv "PATH")
   )
 )
