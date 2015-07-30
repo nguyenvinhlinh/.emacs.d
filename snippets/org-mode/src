@@ -1,7 +1,6 @@
 #name: #+BEGIN_SRC #+END_SRC
 #contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
 # --
-
 #+BEGIN_SRC ${1:language}
 ${0:content}
 #+END_SRC
