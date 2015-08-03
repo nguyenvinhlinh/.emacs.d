@@ -1,0 +1,6 @@
+#name: debug
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+p "####### DEBUG #######"
+p "$0"
+p "##### DEBUG END #####" 
