@@ -1,0 +1,4 @@
+#name: console.log("");
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+console.log("$0");

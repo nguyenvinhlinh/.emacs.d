@@ -1,0 +1,7 @@
+#name: highlight
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: src
+# --
+{% highlight ${1:language} %}
+${0:content}
+{% endhighlight %}
