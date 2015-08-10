@@ -79,3 +79,4 @@
 (require 'linh-keymap)
 (require 'linh-org-mode)
 (require 'linh-sqli)
+(require 'linh-tramp)
