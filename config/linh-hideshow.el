@@ -1,3 +1,8 @@
+;; Reference list
+;; block wrapping: 
+;; https://chrisbarrettnz.wordpress.com/2013/06/15/ruby-code-folding-with-emacs/
+;; keybinding:
+;; http://emacs-fu.blogspot.com/2008/12/showing-and-hiding-blocks-of-code.html
 (add-hook 'ruby-mode-hook
           (lambda()
             (local-set-key (kbd "C-c <right>") 'hs-show-block)
