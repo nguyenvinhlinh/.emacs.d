@@ -80,3 +80,4 @@
 (require 'linh-org-mode)
 (require 'linh-sqli)
 (require 'linh-tramp)
+(require 'linh-hideshow)
