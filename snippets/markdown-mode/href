@@ -1,0 +1,5 @@
+#name: href
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: href
+# --
+[${1:link}](${0:url})
