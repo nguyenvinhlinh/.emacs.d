@@ -1,4 +1,4 @@
-#name: <%= ... %>
+#name: <% ... %>
 #contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
 # --
-<%= $1 %>
+<% $0 %>
