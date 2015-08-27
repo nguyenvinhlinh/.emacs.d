@@ -11,3 +11,8 @@ rake.cache
 tramp
 url/cookiessecret/
 secret/**
+/bookmarks
+/eshell/history
+/eshell/lastdir
+/ido.last
+/recentf
