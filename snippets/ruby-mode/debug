@@ -1,6 +1,6 @@
 #name: debug
 #contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
 # --
-p "####### DEBUG #{__FILE__} #######"
+p "####### DEBUG #{__FILE__} #{__LINE__} #######"
 p "$0"
 p "##### DEBUG END #####" 
