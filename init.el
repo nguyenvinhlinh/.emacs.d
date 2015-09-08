@@ -81,3 +81,4 @@
 (require 'linh-sqli)
 (require 'linh-tramp)
 (require 'linh-hideshow)
+(require 'linh-indentation)
