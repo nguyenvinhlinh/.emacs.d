@@ -1,0 +1,12 @@
+#name: <!DOCTYPE html>
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$1</title>
+  </head>
+  <body>
+    $0
+  </body>
+</html> 
