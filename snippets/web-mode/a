@@ -1,0 +1,5 @@
+#name: <a href="#"> </a>
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: a
+# --
+<a href="$1">$0</a>
