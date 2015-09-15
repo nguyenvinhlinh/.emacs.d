@@ -1,0 +1,7 @@
+#name: <li></li>
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: li
+# --
+<li class="$1">
+$0
+</li> 
