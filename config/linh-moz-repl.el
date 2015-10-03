@@ -1,4 +1,5 @@
 (add-hook 'web-mode-hook 'moz-minor-mode)
+(setq refresh-page nil)
 (defun my-moz-refresh-browser-condition (current-file)
   (let (rlt)
     (cond
@@ -24,7 +25,14 @@
 (defun moz-after-save ()
   (interactive)
   (when (memq major-mode '(web-mode html-mode nxml-mode nxhml-mode php-mode))
-    (moz-reload-browser)))
+    (if (equal refresh-page t)
+        (moz-reload-browser))))
+
+(defun moz-toggle-refresh-page ()
+  (interactive)
+  (if (equal refresh-page nil)
+      (setq refresh-page t)
+    (setq refresh-page nil)))
 
 (add-hook 'after-save-hook 'moz-after-save)
 (provide 'linh-moz-repl)
