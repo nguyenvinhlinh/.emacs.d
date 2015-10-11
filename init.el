@@ -67,6 +67,7 @@
 ;(sp-local-pair 'markdown-mode "<%" "%>")
 ;(sp-local-pair 'markdown-mode "<" ">")
 ;;; Auto guesss taregt
+(require 'linh-yas-ac)
 (require 'linh-dired)
 (require 'linh-web-mode)
 (require 'linh-simple-secret)
