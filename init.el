@@ -85,3 +85,4 @@
 (require 'linh-indentation)
 (require 'linh-moz-repl)
 (require 'linh-javascript-mode)
+(require 'linh-golden-ratio)
