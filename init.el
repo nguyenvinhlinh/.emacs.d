@@ -83,3 +83,4 @@
 (require 'linh-hideshow)
 (require 'linh-indentation)
 (require 'linh-moz-repl)
+(require 'linh-javascript-mode)
