@@ -10,5 +10,5 @@
 (define-key ac-menu-map "\C-n" 'ac-next)
 (define-key ac-menu-map "\C-p" 'ac-previous)
 ;; Ignore case if completion target string doesn't include upper characters
-(setq ac-ignore-case 'smart)
+(setq ac-ignore-case nil)
 (provide 'linh-yas-ac)
