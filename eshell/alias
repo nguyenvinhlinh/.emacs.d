@@ -1,5 +1,6 @@
-alias q exit
-alias ariaw aria2c --enable-rpc --rpc-listen-all
-alias off shutdown -h now
-alias restart shutdown -r now
+alias c  $*
 alias songs mplayer -playlist ~/Music/All\ Songs.pls  -loop 0 -shuffle -vo null
+alias restart shutdown -r now
+alias off shutdown -h now
+alias ariaw aria2c --enable-rpc --rpc-listen-all
+alias q exit
