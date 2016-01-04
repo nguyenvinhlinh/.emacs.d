@@ -1,0 +1,7 @@
+#name: test "" do end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: test
+# --
+test "$1" do
+$0
+end

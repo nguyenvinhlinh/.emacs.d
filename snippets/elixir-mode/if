@@ -1,0 +1,7 @@
+#name: if do end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: if
+# --
+if $1 do
+$0
+end

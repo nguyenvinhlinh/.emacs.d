@@ -1,0 +1,7 @@
+#name: defp end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: defp
+# --
+defp $1 do
+  $0
+end
