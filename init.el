@@ -10,7 +10,6 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 
 (load-theme 'monokai t)
-(require 'nyan-mode)
 (require 'cc-mode)
 (setq-default tab-width 2)
 (require 'autopair)
