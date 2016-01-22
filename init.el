@@ -9,11 +9,6 @@
 (add-to-list 'load-path "~/.emacs.d/libs")
 (add-to-list 'load-path "~/.emacs.d/config")
 
-(load-theme 'monokai t)
-(setq-default tab-width 2)
-
-(custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
 (setq ido-decorations
 '("\n=> " "" "\n" "" "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]"))
 
@@ -29,8 +24,8 @@
 (projectile-global-mode)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 
-(delete-selection-mode)
 
+(require 'linh-startup)
 (require 'linh-autocomplete)
 (require 'linh-company-mode)
 (require 'linh-yasnippet)
@@ -46,10 +41,8 @@
 (require 'linh-simple-secret)
 (require 'linh-keymap)
 (require 'linh-sqli)
-
 (require 'linh-hideshow)
 (require 'linh-indentation)
 (require 'linh-moz-repl)
 (require 'linh-golden-ratio)
 
-;;(require 'linh-tramp)
