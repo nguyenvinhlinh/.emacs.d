@@ -8,9 +8,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/libs")
 (add-to-list 'load-path "~/.emacs.d/config")
-
 (load-theme 'monokai t)
-(require 'cc-mode)
 (setq-default tab-width 2)
 (require 'autopair)
 (autopair-global-mode 1)
@@ -22,24 +20,10 @@
 (ac-config-default)
 (ac-set-trigger-key "TAB")
 (ac-set-trigger-key "<tab>")
-(require 'auto-complete-clang)
-(define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
-(define-key c-mode-map (kbd "C-S-<return>") 'ac-complete-clang)
-(require 'flymake)
-;;; Full screen when startup
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40")
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
-;;; Split window when startup
 (setq ido-decorations
 '("\n=> " "" "\n" "" "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]"))
-;;; auto complete header for C, C++
-(require 'auto-complete-c-headers)
-(add-to-list 'ac-sources 'ac-source-c-headers)
 ;;; modify the interface of dired output
 (require 'dired-details+)
 (setq dired-details-hide-link-targets nil)
@@ -58,20 +42,12 @@
 ;;;Delete selection mode turn on globally
 (delete-selection-mode)
 
-;;; smartparens
-;(smartparens-global-mode t)
-;(show-smartparens-global-mode t)
 
-;;; smartparens
-;(sp-local-pair 'markdown-mode "<%" "%>")
-;(sp-local-pair 'markdown-mode "<" ">")
-;;; Auto guesss taregt
 (require 'linh-yas-ac)
 (require 'linh-dired)
 (require 'linh-web-mode)
 (require 'linh-simple-secret)
 (require 'linh-js3-mode)
-(require 'linh-c-mode)
 (require 'linh-nyan-cat-mode)
 (require 'linh-eshell-mode)
 (require 'linh-ror-mode)
