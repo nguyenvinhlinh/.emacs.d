@@ -5,9 +5,10 @@
                   ))
   (add-to-list 'package-archives source t))
 (package-initialize)
-
+(exec-path-from-shell-initialize)
 (add-to-list 'load-path "~/.emacs.d/libs")
 (add-to-list 'load-path "~/.emacs.d/config")
+
 (load-theme 'monokai t)
 (setq-default tab-width 2)
 
@@ -32,6 +33,7 @@
 
 (require 'linh-autocomplete)
 (require 'linh-yasnippet)
+(require 'linh-autopair)
 (require 'linh-dired)
 (require 'linh-web-mode)
 (require 'linh-simple-secret)
@@ -46,6 +48,5 @@
 (require 'linh-hideshow)
 (require 'linh-indentation)
 (require 'linh-moz-repl)
-(require 'linh-javascript-mode)
 (require 'linh-golden-ratio)
-(require 'linh-autopair)
+(require 'linh-elixir-mode)
