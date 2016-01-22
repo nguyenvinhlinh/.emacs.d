@@ -1,6 +1,6 @@
 (require 'package)
 (dolist (source '(("marmalade" . "http://marmalade-repo.org/packages/")
-                  ("elpa" . "http://tromey.com/elpa/")
+                  ("elpa_gnu" . "http://elpa.gnu.org/packages/")
                   ("melpa" . "http://melpa.milkbox.net/packages/")
                   ))
   (add-to-list 'package-archives source t))
@@ -10,9 +10,7 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 (load-theme 'monokai t)
 (setq-default tab-width 2)
-(require 'autopair)
-(autopair-global-mode 1)
-(setq autopair-autowrap t)
+
 (require 'yasnippet)
 (yas-global-mode 1)
 (require 'auto-complete-config)
@@ -61,3 +59,4 @@
 (require 'linh-moz-repl)
 (require 'linh-javascript-mode)
 (require 'linh-golden-ratio)
+(require 'linh-autopair)
