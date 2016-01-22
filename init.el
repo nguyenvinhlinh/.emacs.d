@@ -11,20 +11,12 @@
 (load-theme 'monokai t)
 (setq-default tab-width 2)
 
-(require 'yasnippet)
-(yas-global-mode 1)
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
-(ac-set-trigger-key "TAB")
-(ac-set-trigger-key "<tab>")
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 (setq ido-decorations
 '("\n=> " "" "\n" "" "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]"))
 ;;; modify the interface of dired output
-(require 'dired-details+)
-(setq dired-details-hide-link-targets nil)
+
 ;;; set the number of collumns to go to next line
 (setq-default fill-column 80)
 ;;; moz
@@ -40,8 +32,8 @@
 ;;;Delete selection mode turn on globally
 (delete-selection-mode)
 
-
-(require 'linh-yas-ac)
+(require 'linh-autocomplete)
+(require 'linh-yasnippet)
 (require 'linh-dired)
 (require 'linh-web-mode)
 (require 'linh-simple-secret)
