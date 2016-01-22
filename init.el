@@ -15,21 +15,19 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 (setq ido-decorations
 '("\n=> " "" "\n" "" "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]"))
-;;; modify the interface of dired output
 
-;;; set the number of collumns to go to next line
 (setq-default fill-column 80)
-;;; moz
-;;;(add-to-list 'load-path "~/.emacs.d/")
+
+
 (autoload 'moz-minor-mode "moz" "Mozilla Minor and Inferior Mozilla Modes" t)
 (add-hook 'javascript-mode-hook 'javascript-custom-setup)
 (defun javascript-custom-setup ()
   (moz-minor-mode 1))
 (require 'sudo-save)
-;;;Hooking up with Projectile
+
 (projectile-global-mode)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
-;;;Delete selection mode turn on globally
+
 (delete-selection-mode)
 
 (require 'linh-autocomplete)
@@ -37,7 +35,6 @@
 (require 'linh-dired)
 (require 'linh-web-mode)
 (require 'linh-simple-secret)
-(require 'linh-js3-mode)
 (require 'linh-nyan-cat-mode)
 (require 'linh-eshell-mode)
 (require 'linh-ror-mode)

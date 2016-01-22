@@ -1,8 +1,9 @@
+(autoload 'js3-mode "js3" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 (add-to-list 'ac-modes 'js3-mode)
-
-(custom-set-variables
- '(js3-enter-indents-newline t))
+(setq js3-auto-indent-p t)
+(setq js3-enter-indents-newline t)
+(setq js3-indent-on-enter-key t)
 
 (add-hook 'js3-mode-hook
           (lambda ()
