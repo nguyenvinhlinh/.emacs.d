@@ -5,5 +5,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
+
 (delete-selection-mode)
 (provide 'linh-startup)

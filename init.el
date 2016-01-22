@@ -45,4 +45,4 @@
 (require 'linh-indentation)
 (require 'linh-moz-repl)
 (require 'linh-golden-ratio)
-
+(require 'linh-magit)
