@@ -1,4 +1,5 @@
 (ido-mode t)
 (setq ido-separator "\n")
 (setq ido-enable-flex-matching t)
+(global-set-key (kbd "M-x") 'smex)
 (provide 'linh-ido)
