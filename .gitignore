@@ -17,3 +17,4 @@ secret/**
 /ido.last
 /recentf
 *~
+/config/linh-secret-db.el
