@@ -40,7 +40,7 @@
 (require 'linh-nyan-cat-mode)
 (require 'linh-simple-secret)
 (require 'linh-keymap)
-(require 'linh-sqli)
+(require 'linh-sql)
 (require 'linh-hideshow)
 (require 'linh-indentation)
 (require 'linh-moz-repl)
