@@ -1,0 +1,7 @@
+#name: debug
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: debug
+# --
+IO.inspect "DEBUG #{__ENV__.file} @#{__ENV__.line}"
+IO.inspect $0
+IO.inspect "END"

@@ -1,7 +1,0 @@
-#name: def end
-#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
-#key: def
-# --
-def $1 do
-  $0
-end
